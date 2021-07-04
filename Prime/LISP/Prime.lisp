@@ -1,0 +1,37 @@
+(defun isPrime (x)
+	(cond	((< x 2) -1)
+		((= x 2) 1)
+		((= (mod x 2) 0) 0)
+		(t (isPrimeSub x))
+	)
+)
+
+(defun isPrimeSub (x)
+	(progn	(setq i 3)
+		(setq f 1)
+		(loop
+			(if (> i (sqrt x)) (return 0))
+			(if (= (mod x i) 0) (progn (setq f 0) (return 0)))
+			(setq i (+ i 2))
+		)
+	)
+	f
+)
+
+(defun OutputStr (x)
+	(cond 	((= x -1) "Error")
+		((= x  0) "Composite number")
+		((= x  1) "Prime number")
+	)
+)
+
+(loop
+	(format t "number : ")
+	(setq x (read))
+	(format t "~a~%" (OutputStr (isPrime x)))
+	(format t "~%")
+	(format t "Continue? (Yes : 1 / No : 0) : ")
+	(setq f (read))
+	(format t "~%")
+	(if (= f 0) (return 0))
+)
