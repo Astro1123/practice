@@ -1,5 +1,8 @@
 print('n = ', end = '')
-n = int(input())
+try:
+	n = int(input())
+except:
+		n = 100
 if n < 1:
 	n = 100
 print('')
