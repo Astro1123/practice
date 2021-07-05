@@ -8,11 +8,11 @@ int Fibonacci(int x) {
 }
 
 int main() {
-	int i,n;
 	string str;
 	
 	cout << "n = " << flush;
 	getline(cin,str);
+	int n;
 	try {
 		n = stoi(str);
 	}
@@ -22,7 +22,7 @@ int main() {
 	if (n < 0) n = 0;
 	cout << endl;
 	
-	for (i=0; i<=n; i++)
+	for (int i=0; i<=n; i++)
 		cout << i << " : " << Fibonacci(i) << endl;
 	
 	cout << endl;
