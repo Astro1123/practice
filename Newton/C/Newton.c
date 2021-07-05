@@ -3,7 +3,7 @@
 #include <math.h>
 #include "calc.h"
 
-double f(double x) {
+double func(double x) {
 	return x * x - 2;
 }
 
@@ -11,6 +11,9 @@ int main(void) {
 	int i,count;
 	double x,h,eps;
 	char str[100];
+	
+	double (*f)(double);
+	f = func;
 	
 	printf("x = ");
 	fgets(str,sizeof(str),stdin);
