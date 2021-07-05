@@ -1,17 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
+#include "calc.h"
 
 double f(double x) {
 	return x * x - 2;
-}
-
-double fd(double x,double h) {
-	return (f(x+h/2)-f(x-h/2))/h;
-}
-
-double Newton(double x,double h) {
-	return x - f(x) / fd(x,h);
 }
 
 int main(void) {
@@ -37,7 +30,7 @@ int main(void) {
 	puts("");
 	
 	for (i=0; i<count; i++) {
-		x = Newton(x,h);
+		x = Newton(x,h,f);
 		if (fabs(f(x)) < eps) break;
 	}
 	printf("x = %f\nf(x) = %f\n",x,f(x));
