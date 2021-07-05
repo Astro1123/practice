@@ -8,14 +8,14 @@
 
 (defun isPrimeSub (x)
 	(progn	(setq i 3)
-		(setq f 1)
+		(setq fl 1)
 		(loop
 			(if (> i (sqrt x)) (return 0))
-			(if (= (mod x i) 0) (progn (setq f 0) (return 0)))
+			(if (= (mod x i) 0) (progn (setq fl 0) (return 0)))
 			(setq i (+ i 2))
 		)
 	)
-	f
+	fl
 )
 
 (defun OutputStr (x)
@@ -31,7 +31,7 @@
 	(format t "~a~%" (OutputStr (isPrime x)))
 	(format t "~%")
 	(format t "Continue? (Yes : 1 / No : 0) : ")
-	(setq f (read))
+	(setq i (read))
 	(format t "~%")
-	(if (= f 0) (return 0))
+	(if (= i 0) (return 0))
 )
