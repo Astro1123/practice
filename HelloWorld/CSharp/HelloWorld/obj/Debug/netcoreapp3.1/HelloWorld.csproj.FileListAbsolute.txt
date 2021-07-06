@@ -1,0 +1,12 @@
+/Users/adansonia/Desktop/source/git/practice/HelloWorld/CSharp/HelloWorld/bin/Debug/netcoreapp3.1/HelloWorld.deps.json
+/Users/adansonia/Desktop/source/git/practice/HelloWorld/CSharp/HelloWorld/bin/Debug/netcoreapp3.1/HelloWorld.runtimeconfig.json
+/Users/adansonia/Desktop/source/git/practice/HelloWorld/CSharp/HelloWorld/bin/Debug/netcoreapp3.1/HelloWorld.runtimeconfig.dev.json
+/Users/adansonia/Desktop/source/git/practice/HelloWorld/CSharp/HelloWorld/bin/Debug/netcoreapp3.1/HelloWorld.dll
+/Users/adansonia/Desktop/source/git/practice/HelloWorld/CSharp/HelloWorld/bin/Debug/netcoreapp3.1/HelloWorld.pdb
+/Users/adansonia/Desktop/source/git/practice/HelloWorld/CSharp/HelloWorld/obj/Debug/netcoreapp3.1/HelloWorld.csproj.AssemblyReference.cache
+/Users/adansonia/Desktop/source/git/practice/HelloWorld/CSharp/HelloWorld/obj/Debug/netcoreapp3.1/HelloWorld.AssemblyInfoInputs.cache
+/Users/adansonia/Desktop/source/git/practice/HelloWorld/CSharp/HelloWorld/obj/Debug/netcoreapp3.1/HelloWorld.AssemblyInfo.cs
+/Users/adansonia/Desktop/source/git/practice/HelloWorld/CSharp/HelloWorld/obj/Debug/netcoreapp3.1/HelloWorld.csproj.CoreCompileInputs.cache
+/Users/adansonia/Desktop/source/git/practice/HelloWorld/CSharp/HelloWorld/obj/Debug/netcoreapp3.1/HelloWorld.dll
+/Users/adansonia/Desktop/source/git/practice/HelloWorld/CSharp/HelloWorld/obj/Debug/netcoreapp3.1/HelloWorld.pdb
+/Users/adansonia/Desktop/source/git/practice/HelloWorld/CSharp/HelloWorld/obj/Debug/netcoreapp3.1/HelloWorld.genruntimeconfig.cache
