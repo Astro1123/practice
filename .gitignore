@@ -1,5 +1,5 @@
-practice/**/CSharp/**/bin/
-practice/**/CSharp/**/obj/
-practice/**/CSharp/**/*.sln
-practice/**/CSharp/**/*.csproj
-practice/**/CSharp/**/.vs/
+**/CSharp/**/bin/
+**/CSharp/**/obj/
+**/CSharp/**/*.sln
+**/CSharp/**/*.csproj
+**/CSharp/**/.vs/
