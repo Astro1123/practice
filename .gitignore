@@ -1,5 +1,5 @@
-practice/HelloWorld/CSharp/HelloWorld/bin/
-practice/HelloWorld/CSharp/HelloWorld/obj/
-practice/HelloWorld/CSharp/HelloWorld/HelloWorld.sln
-practice/HelloWorld/CSharp/HelloWorld/HelloWorld.csproj
-practice/HelloWorld/CSharp/HelloWorld/.vs/
+practice/**/CSharp/**/bin/
+practice/**/CSharp/**/obj/
+practice/**/CSharp/**/*.sln
+practice/**/CSharp/**/*.csproj
+practice/**/CSharp/**/.vs/
