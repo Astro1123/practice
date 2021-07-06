@@ -1,0 +1,5 @@
+**/CSharp/**/.vs/
+**/CSharp/**/bin/
+**/CSharp/**/obj/
+**/CSharp/**/*.csproj
+**/CSharp/**/*.sln
