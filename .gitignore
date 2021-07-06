@@ -3,3 +3,7 @@
 **/CSharp/**/obj/
 **/CSharp/**/*.csproj
 **/CSharp/**/*.sln
+.DS_Store
+**/.DS_Store
+**/**/.DS_Store
+**/**/**/.DS_Store
