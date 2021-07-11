@@ -17,6 +17,9 @@ int main(void) {
 	printf("n = ");
 	fgets(str,sizeof(str),stdin);
 	n = atoi(str);
+	if (n < 10) {
+		n = 10;
+	}
 	puts("");
 	
 	ar = (int *)malloc(sizeof(int)*n);
@@ -56,7 +59,7 @@ double GetRand() {
 
 void shuffle(int ar[], int n) {
 	int i;
-	for (i=n-1; i>0; i--) {
-		swap(&ar[i], &ar[(int)(GetRand()*n)]);
+	for (i=n; i>1; i--) {
+		swap(&ar[i-1], &ar[(int)(GetRand()*n)%i]);
 	}
 }
