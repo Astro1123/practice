@@ -42,6 +42,14 @@ void QSort(vector<int>& ar, int left, int right) {
 		QSort(ar, j+1, right);
 }
 
+void Shuffle(vector<int>& ar,int n) {
+	random_device rd;
+	mt19937 mt(rd());
+	uniform_int_distribution<int> rand(0, n-1);
+	for (int i = n; i > 1; i--) {
+        Swap(ar,i-1,rand(mt)%i);
+    }
+}
 
 int main() {
 	string str;
@@ -66,15 +74,8 @@ int main() {
 	for (int i = 0; i < n; i++) {
 		ar[i] = i+1;
 	}
-	
-	// Shuffle
-	random_device rd;
-	mt19937 mt(rd());
-	uniform_int_distribution<int> rand(0, n-1);
-	for (int i = n; i > 1; i--) {
-        Swap(ar,i-1,rand(mt)%i);
-    }
     
+    Shuffle(ar,n);
     PrintAr(ar,n);
     QSort(ar,0,n-1);
     PrintAr(ar,n);
