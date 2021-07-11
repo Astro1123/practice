@@ -4,15 +4,15 @@ puts("")
 if n < 0 then
 	n = 100
 end
-for i in 1..n
-	if i % 15 == 0 then
+for i in 0...n
+	if (i+1) % 15 == 0 then
 		print("FizzBuzz\n")
-	elsif i % 5 == 0 then
+	elsif (i+1) % 5 == 0 then
 		print("Buzz\n")
-	elsif i % 3 == 0 then
+	elsif (i+1) % 3 == 0 then
 		print("Fizz\n")
 	else
-		print(i,"\n")
+		print((i+1),"\n")
 	end
 end
 puts("")
