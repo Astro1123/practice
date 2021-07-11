@@ -8,9 +8,9 @@ def Swap(intlist,a,b):
 
 def Shuffle(intlist,n):
 	for i in intlist:
-		j = n - i + 1
-		k = random.randrange(n) % j
-		Swap(intlist,j-1,k)
+		j = n - i
+		k = random.randrange(n) % (j+1)
+		Swap(intlist,j,k)
 		
 def QSort(intlist,left,right):
 	i = left
