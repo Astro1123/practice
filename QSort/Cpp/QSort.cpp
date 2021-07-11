@@ -75,8 +75,15 @@ int main() {
 		ar[i] = i+1;
 	}
     
+    cout << "Initialize : " << endl;
+    PrintAr(ar,n);
+    cout << endl;
     Shuffle(ar,n);
+    cout << "Shuffle : " << endl;
     PrintAr(ar,n);
+    cout << endl;
     QSort(ar,0,n-1);
+    cout << "Sort : " << endl;
     PrintAr(ar,n);
+    cout << endl;
 }

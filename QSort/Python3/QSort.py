@@ -42,8 +42,15 @@ print('')
 intlist = list(range(n))
 for i in intlist:
 	intlist[i]=i+1
-Shuffle(intlist,n)
+
+print('Initialize : ')
 print(intlist)
+print('')
+Shuffle(intlist,n)
+print('Shuffle : ')
+print(intlist)
+print('')
 QSort(intlist,0,n-1)
+print('Sort : ')
 print(intlist)
 print('')

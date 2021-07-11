@@ -27,9 +27,15 @@ int main(void) {
 		ar[i]=i+1;
 	}
 	
-	shuffle(ar,n);
+	puts("Initialize : ");
 	PrintAr(ar,n);
+	puts("");
+	shuffle(ar,n);
+	puts("Shuffle : ");
+	PrintAr(ar,n);
+	puts("");
 	QSort(ar,n,QSortComp);
+	puts("Sort : ");
 	PrintAr(ar,n);
 	
 	puts("");
