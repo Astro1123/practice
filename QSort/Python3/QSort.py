@@ -47,14 +47,3 @@ print(intlist)
 QSort(intlist,0,n-1)
 print(intlist)
 print('')
-
-#for i in range(n):
-#	if (i+1)%15 == 0:
-#		print('Fizz Buzz')
-#	elif (i+1)%5 == 0:
-#		print('Buzz')
-#	elif (i+1)%3 == 0:
-#		print('Fizz')
-#	else:
-#		print(i+1)
-#print('')
