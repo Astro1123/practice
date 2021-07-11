@@ -1,7 +1,6 @@
-import java.util.*;
-
+import java.util.Scanner;
 public class FizzBuzz {
-    public static void main(String[] args ) throws Exception {
+    public static void main(String[] args ) {
         Scanner sc = new Scanner(System.in);
         System.out.print("n = ");
         String str = sc.nextLine();
