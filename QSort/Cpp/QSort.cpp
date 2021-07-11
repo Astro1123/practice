@@ -5,11 +5,10 @@
 
 using namespace std;
 
-vector<int> Swap(vector<int> ar,int i,int j) {
+void Swap(vector<int>& ar,int i,int j) {
 	int tmp = ar[i];
 	ar[i]=ar[j];
 	ar[j]=tmp;
-	return ar;
 }
 
 void PrintAr(vector<int> ar,int n) {
@@ -22,7 +21,7 @@ void PrintAr(vector<int> ar,int n) {
 	cout << " ]" << endl;
 }
 
-vector<int> QSort(vector<int> ar, int left, int right) {
+void QSort(vector<int>& ar, int left, int right) {
 	int i = left;
 	int j = right;
 	int pivot = ar[left];
@@ -33,15 +32,14 @@ vector<int> QSort(vector<int> ar, int left, int right) {
 			j--;
 		if (i >= j)
 			break;
-		ar=Swap(ar,i,j);
+		Swap(ar,i,j);
 		i++;
 		j--;
 	}
 	if (left < i-1)
-		ar=QSort(ar, left, i-1);
+		QSort(ar, left, i-1);
 	if (j+1 < right)
-		ar=QSort(ar, j+1, right);
-	return ar;
+		QSort(ar, j+1, right);
 }
 
 
@@ -74,10 +72,10 @@ int main() {
 	mt19937 mt(rd());
 	uniform_int_distribution<int> rand(0, n-1);
 	for (int i = n; i > 1; i--) {
-        ar=Swap(ar,i-1,rand(mt)%i);
+        Swap(ar,i-1,rand(mt)%i);
     }
     
     PrintAr(ar,n);
-    ar = QSort(ar,0,n-1);
+    QSort(ar,0,n-1);
     PrintAr(ar,n);
 }
