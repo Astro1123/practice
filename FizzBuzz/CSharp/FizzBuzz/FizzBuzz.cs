@@ -8,8 +8,10 @@ namespace FizzBuzz
         {
             Console.Write("n = ");
             var line1 = Console.ReadLine().Trim();
-            var n = int.Parse(line1);
-            n = (n < 1 ? 100 : n);
+            if (int.TryParse(line1, out var n))
+                n = (n < 1 ? 100 : n);
+            else
+                n = 100;
             Console.WriteLine("");
             for (var i = 0; i < n; i++ ) {
                 if ((i+1) % 15 == 0) {

@@ -5,8 +5,10 @@ namespace Fibonacci {
         public static void Main() {
             Console.Write("n = ");
             var line1 = Console.ReadLine().Trim();
-            var n = int.Parse(line1);
-            n = (n < 0 ? 0 : n);
+            if (int.TryParse(line1, out var n))
+                n = (n < 0 ? 0 : n);
+            else
+                n = 0;
             Console.WriteLine("");
             for (var i = 0; i <= n; i++) {
                 Console.WriteLine("{0} : {1}",i,Fibonacci(i));
