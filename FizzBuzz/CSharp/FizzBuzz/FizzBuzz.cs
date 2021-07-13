@@ -2,7 +2,7 @@
 
 namespace FizzBuzz
 {
-    public class FizzBuzz
+    public class FB
     {
         public static void Main()
         {
