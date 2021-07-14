@@ -1,14 +1,8 @@
 **/CSharp/**/.vs/
 **/CSharp/**/bin/
 **/CSharp/**/obj/
-**/CSharp(Cocoa)/**/obj/
-**/CSharp(Cocoa)/**/Resources/
-**/CSharp(Cocoa)/**/Assets.xcassets/
-**/CSharp(Cocoa)/**/.vs/
 **/CSharp/**/*.csproj
 **/CSharp/**/*.sln
-**/CSharp(Cocoa)/**/*.csproj
-**/CSharp(Cocoa)/**/*.sln
 
 .DS_Store
 **/.DS_Store
