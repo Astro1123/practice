@@ -5,7 +5,7 @@
 **/CSharp(Cocoa)/**/bin/
 **/CSharp(Cocoa)/**/Resources/
 **/CSharp(Cocoa)/**/Assets.xcassets/
-!**/apptest
+!/**/apptest
 **/CSharp(Cocoa)/**/.vs/
 **/CSharp/**/*.csproj
 **/CSharp/**/*.sln
