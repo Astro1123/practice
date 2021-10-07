@@ -12,11 +12,11 @@ k=0
 l=1
 j=1
 
-	for ((i=0 ; i<n+1 ; i++))
-	do
-		echo "$i : $j"
-		j=$(($k+$l))
-		k=$l
-		l=$j
-	done
+for ((i=0 ; i<n+1 ; i++))
+do
+	echo "$i : $j"
+	j=$(($k+$l))
+	k=$l
+	l=$j
+done
 echo ""
