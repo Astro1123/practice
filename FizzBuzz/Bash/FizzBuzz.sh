@@ -1,16 +1,15 @@
-#!/bin/sh
-if [ $# -eq 0 ]
+#!/bin/bash
+echo -n "n = "
+read n
+if [ $n -lt 1 ]
 then
 	n=100
-else
-	n="$1"
 fi
 if [ $n -lt 0 ]
 then
 	n=100
 fi
 
-echo "n = $n"
 echo ""
 for ((i=1 ; i<n+1 ; i++))
 do
