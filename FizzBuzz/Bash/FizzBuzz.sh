@@ -5,10 +5,6 @@ if [ $n -lt 1 ]
 then
 	n=100
 fi
-if [ $n -lt 0 ]
-then
-	n=100
-fi
 
 echo ""
 for ((i=1 ; i<n+1 ; i++))
