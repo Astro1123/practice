@@ -12,13 +12,6 @@ k=0
 l=1
 j=1
 
-if [ $n -lt 2 ]
-then 
-	for ((i=0 ; i<n+1 ; i++))
-	do
-		echo "$i : 1" 
-	done
-else
 	for ((i=0 ; i<n+1 ; i++))
 	do
 		echo "$i : $j"
@@ -26,5 +19,4 @@ else
 		k=$l
 		l=$j
 	done
-fi
 echo ""
