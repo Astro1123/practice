@@ -1,9 +1,5 @@
 package Test;
 
-import java.util.Map;
-import java.util.LinkedHashMap;
-import java.util.Iterator;
-
 import Sort.*;
 import Sort.Const.*;
 
@@ -18,14 +14,11 @@ public class TestDriver {
 	
 	private void startDriver() {
 		SortMap sm = new SortMap();
-		sm.makeMap();
-		Map<String, Sort> sortMap = sm.getSortMap(LIST);
 		
 		System.out.println("----------------------------------------");
-		for (Iterator<String> itr = sortMap.keySet().iterator(); itr.hasNext();) {
-			String key = itr.next();
+		for (String key : LIST) {
 			System.out.println(String.format("%s sort:", key));
-			test(sortMap.get(key));
+			test(sm.getMethod(key));
 			System.out.println("----------------------------------------");
 		}
 	}

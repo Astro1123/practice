@@ -17,10 +17,6 @@ public class SortMap {
 	private Map<String, Sort> sortMap;
 	
 	public SortMap() {
-		makeMap();
-	}
-	
-	public void makeMap() {
 		sortMap = new LinkedHashMap<>();
 		sortMap.put("Bubble", new BubbleSort());
 		sortMap.put("Gnome", new GnomeSort());
@@ -30,6 +26,14 @@ public class SortMap {
 		sortMap.put("Insertion", new InsertionSort());
 		sortMap.put("Heap", new HeapSort());
 		sortMap.put("Shaker", new ShakerSort());
+	}
+	
+	public Sort getMethod(String key) {
+		Sort result = null;
+		if (sortMap.containsKey(key)) {
+			result = sortMap.get(key);
+		}
+		return result;
 	}
 	
 	public Map<String, Sort> getSortMap() {
@@ -60,14 +64,6 @@ public class SortMap {
 			if (sortMap.containsKey(key)) {
 				result.put(key, sortMap.get(key));
 			}
-		}
-		return result;
-	}
-	
-	public Sort getMethod(String key) {
-		Sort result = null;
-		if (sortMap.containsKey(key)) {
-			result = sortMap.get(key);
 		}
 		return result;
 	}
