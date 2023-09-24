@@ -3,6 +3,7 @@
 **/CSharp/**/obj/
 **/CSharp/**/*.csproj
 **/CSharp/**/*.sln
+Sort/Java/old/
 
 .DS_Store
 **/.DS_Store
