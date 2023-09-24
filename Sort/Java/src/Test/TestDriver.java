@@ -5,7 +5,16 @@ import Sort.Const.*;
 
 public class TestDriver {
 	private final int LENGTH = 16;
-	private final String[] LIST = {"Bubble", "Selection", "Insertion", "Heap", "Merge", "Quick"};
+	private final String[] LIST = {
+		"Bubble", 
+		"Selection", 
+		"Insertion", 
+		"Heap", 
+		"Merge", 
+		"Quick",
+		//"Gnome",
+		//"Shaker"
+	};
 	
 	public static void main(String[] args) {
 		TestDriver td = new TestDriver();
