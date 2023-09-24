@@ -78,9 +78,10 @@ public class Change {
 			br.close();
 		} catch (IOException e) {
             e.printStackTrace();
-	    br.close();
+			br.close();
             return -1;
         }
+        
 		if (price <= 0 || payment <= 0) {
 			result = -1;
 		} else {
