@@ -9,3 +9,14 @@ Sort/Java/old/
 **/.DS_Store
 *.class
 
+**/C/*
+!**/C/*.c
+!**/C/*.h
+
+**/Cpp/*
+!**/Cpp/*.cpp
+!**/Cpp/*.hpp
+
+**/Fortran/*
+!**/Cpp/*.f
+!**/Cpp/*.f90
