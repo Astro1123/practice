@@ -49,7 +49,7 @@ public class Test {
 	}
 	
 	private void shuffleCount(int[] arr, int count) {
-		for (int i = 0; i < count; i--) {
+		for (int i = 0; i < count; i++) {
 			int j = rand(0, arr.length);
 			int k = rand(0, arr.length);
 			swap(arr, j, k);
