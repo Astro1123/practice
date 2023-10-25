@@ -1,13 +1,13 @@
-package Sort.HeapSort;
+package Sort;
 
 import java.util.Arrays;
 
 import Debug.Log;
 import Sort.Const.Order;
-import Sort.Sort;
 
 public class HeapSort implements Sort {
 	private Order order;
+	private final String methodName = "Heap sort";
 	
 	public HeapSort() {
 		setOrder(Order.ASC);
@@ -41,6 +41,11 @@ public class HeapSort implements Sort {
 		}
 		
 		return dst;
+	}
+	
+	@Override
+	public String getName() {
+		return methodName;
 	}
 	
 	private void extHeap(int[] arr, int root, int bottom) {

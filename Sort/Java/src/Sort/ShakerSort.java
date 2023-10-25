@@ -1,13 +1,13 @@
-package Sort.ShakerSort;
+package Sort;
 
 import java.util.Arrays;
 
 import Debug.Log;
 import Sort.Const.Order;
-import Sort.Sort;
 
 public class ShakerSort implements Sort {
 	private Order order;
+	private final String methodName = "Shaker sort";
 	
 	public ShakerSort() {
 		setOrder(Order.ASC);
@@ -52,6 +52,11 @@ public class ShakerSort implements Sort {
 			if (right == left) break;
 		}
 		return dst;
+	}
+	
+	@Override
+	public String getName() {
+		return methodName;
 	}
 	
 	private boolean comp(int i, int j) {

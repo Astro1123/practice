@@ -50,8 +50,8 @@ public class Test {
 	
 	private void shuffleCount(int[] arr, int count) {
 		for (int i = 0; i < count; i++) {
-			int j = rand(0, arr.length);
-			int k = rand(0, arr.length);
+			int j = rand(0, arr.length - 1);
+			int k = rand(0, arr.length - 1);
 			swap(arr, j, k);
 		}
 	}
@@ -63,8 +63,8 @@ public class Test {
 	}
 	
 	private int rand(int min, int max) {
-		Random rand = new Random();
-		double r = rand.nextDouble();
+		Random random = new Random();
+		double r = random.nextDouble();
 		if (min > max) {
 			int tmp = max;
 			max = min;

@@ -5,15 +5,15 @@ import Sort.Const.*;
 
 public class TestDriver {
 	private final int LENGTH = 16;
-	private final String[] LIST = {
-		"Bubble", 
-		"Selection", 
-		"Insertion", 
-		"Heap", 
-		"Merge", 
-		"Quick",
-		//"Gnome",
-		//"Shaker",
+	private final Sort[] LIST = {
+		new BubbleSort(), 
+		new SelectionSort(), 
+		new InsertionSort(), 
+		new HeapSort(), 
+		new MergeSort(), 
+		new QuickSort(),
+		//new GnomeSort(),
+		//new ShakerSort(),
 	};
 	
 	public static void main(String[] args) {
@@ -22,12 +22,11 @@ public class TestDriver {
 	}
 	
 	private void startDriver() {
-		SortMap sm = new SortMap();
-		
 		System.out.println("----------------------------------------");
-		for (String key : LIST) {
-			System.out.println(String.format("%s sort:", key));
-			test(sm.getMethod(key));
+		for (Sort s : LIST) {
+			System.out.print("Method: ");
+			System.out.println(s.getName());
+			test(s);
 			System.out.println("----------------------------------------");
 		}
 	}

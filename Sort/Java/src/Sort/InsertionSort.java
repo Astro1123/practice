@@ -1,13 +1,13 @@
-package Sort.InsertionSort;
+package Sort;
 
 import java.util.Arrays;
 
 import Debug.Log;
 import Sort.Const.Order;
-import Sort.Sort;
 
 public class InsertionSort implements Sort {
 	private Order order;
+	private final String methodName = "Insertion sort";
 	
 	public InsertionSort() {
 		setOrder(Order.ASC);
@@ -33,6 +33,11 @@ public class InsertionSort implements Sort {
 		}
 		
 		return dst;
+	}
+	
+	@Override
+	public String getName() {
+		return methodName;
 	}
 	
 	private boolean comp(int i, int j) {

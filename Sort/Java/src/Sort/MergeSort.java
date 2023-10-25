@@ -1,13 +1,13 @@
-package Sort.MergeSort;
+package Sort;
 
 import java.util.Arrays;
 
 import Debug.Log;
 import Sort.Const.Order;
-import Sort.Sort;
 
 public class MergeSort implements Sort {
 	private Order order;
+	private final String methodName = "Merge sort";
 	
 	public MergeSort() {
 		setOrder(Order.ASC);
@@ -30,6 +30,11 @@ public class MergeSort implements Sort {
 		mergeSort(dst, tmp, 0, dst.length-1);
 		
 		return dst;
+	}
+	
+	@Override
+	public String getName() {
+		return methodName;
 	}
 	
 	private void mergeSort(int[] arr, int[] tmp, int left, int right) {

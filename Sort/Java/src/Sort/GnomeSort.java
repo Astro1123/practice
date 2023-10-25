@@ -1,19 +1,19 @@
-package Sort.BubbleSort;
+package Sort;
 
 import java.util.Arrays;
 
 import Debug.Log;
 import Sort.Const.Order;
-import Sort.Sort;
 
-public class BubbleSort implements Sort {
+public class GnomeSort implements Sort {
 	private Order order;
+	private final String methodName = "Gnome sort";
 	
-	public BubbleSort() {
+	public GnomeSort() {
 		setOrder(Order.ASC);
 	}
 	
-	public BubbleSort(Order order) {
+	public GnomeSort(Order order) {
 		setOrder(order);
 	}
 	
@@ -27,21 +27,27 @@ public class BubbleSort implements Sort {
 		int[] dst = Arrays.copyOf(src, src.length);
 		
 		for (int i = 0; i < dst.length-1; i++) {
-			for (int j = 1; j < dst.length - i; j++) {
-				if ( comp( dst[j-1], dst[j] ) ) {
-					swap(dst, j-1, j);
-				}
+			int j = i;
+			while (j >= 0) {
+				if ( comp( dst[j], dst[j+1] ) ) break;
+				swap(dst, j, j+1);
+				j--;
 			}
 		}
 		
 		return dst;
 	}
 	
+	@Override
+	public String getName() {
+		return methodName;
+	}
+	
 	private boolean comp(int i, int j) {
 		if (this.order == Order.ASC) {
-			return i > j;
+			return i <= j;
 		}
-		return i < j;
+		return i >= j;
 	}
 	
 	private void swap(int[] arr, int e1, int e2) {

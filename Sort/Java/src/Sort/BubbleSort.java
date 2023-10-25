@@ -1,19 +1,19 @@
-package Sort.SelectionSort;
+package Sort;
 
 import java.util.Arrays;
 
 import Debug.Log;
 import Sort.Const.Order;
-import Sort.Sort;
 
-public class SelectionSort implements Sort {
+public class BubbleSort implements Sort {
 	private Order order;
+	private final String methodName = "Bubble sort";
 	
-	public SelectionSort() {
+	public BubbleSort() {
 		setOrder(Order.ASC);
 	}
 	
-	public SelectionSort(Order order) {
+	public BubbleSort(Order order) {
 		setOrder(order);
 	}
 	
@@ -25,23 +25,21 @@ public class SelectionSort implements Sort {
 	@Override
 	public int[] sort(final int[] src) {
 		int[] dst = Arrays.copyOf(src, src.length);
-		int ext;
-		int extpos;
-		int i, j;
 		
-		for (i = 0; i < dst.length-1; i++) {
-			ext = dst[i];
-			extpos = i;
-			for (j = i+1; j < dst.length; j++) {
-				if ( comp( ext, dst[j] ) ) {
-					extpos = j;
-					ext = dst[j];
+		for (int i = 0; i < dst.length-1; i++) {
+			for (int j = 1; j < dst.length - i; j++) {
+				if ( comp( dst[j-1], dst[j] ) ) {
+					swap(dst, j-1, j);
 				}
 			}
-			swap(dst, i, extpos);
 		}
 		
 		return dst;
+	}
+	
+	@Override
+	public String getName() {
+		return methodName;
 	}
 	
 	private boolean comp(int i, int j) {

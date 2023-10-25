@@ -1,15 +1,15 @@
-package Sort.QuickSort;
+package Sort;
 
 import java.util.Arrays;
 import java.util.Random;
 
 import Debug.Log;
 import Sort.Const.Order;
-import Sort.Sort;
 
 public class QuickSort implements Sort {
 	private Order order;
 	private Pivot piv = Pivot.MEDIAN;
+	private final String methodName = "Quick sort";
 	
 	public QuickSort() {
 		setOrder(Order.ASC);
@@ -31,6 +31,11 @@ public class QuickSort implements Sort {
 		quickSort(dst, 0, dst.length-1);
 		
 		return dst;
+	}
+	
+	@Override
+	public String getName() {
+		return methodName;
 	}
 	
 	private void quickSort(int[] arr, final int left, final int right) {
