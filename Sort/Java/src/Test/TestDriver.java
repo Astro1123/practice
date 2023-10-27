@@ -26,6 +26,7 @@ public class TestDriver {
 		for (Sort s : LIST) {
 			System.out.print("Method: ");
 			System.out.println(s.getName());
+			s.printOrder();
 			test(s);
 			System.out.println("----------------------------------------");
 		}

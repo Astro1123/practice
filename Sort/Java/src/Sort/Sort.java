@@ -7,6 +7,9 @@ import Sort.Const.Order;
 public interface Sort {
 	public String getName();
 	public void setOrder(Order order);
+	public void setOrder(boolean order);
+	public void printOrder();
+	//public Order getOrder();
 	//public float[] sort(final float[] src);
 	//public double[] sort(final double[] src);
 	//public byte[] sort(final byte[] src);

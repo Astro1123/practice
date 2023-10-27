@@ -15,9 +15,35 @@ public class QuickSort implements Sort {
 		setOrder(Order.ASC);
 	}
 	
+	public QuickSort(Order order) {
+		setOrder(order);
+	}
+	
+	public QuickSort(boolean order) {
+		setOrder(order);
+	}
+	
+	@Override
+	public void setOrder(boolean order) {
+		if (order) {
+			this.order = Order.ASC;
+		} else {
+			this.order = Order.DESC;
+		}
+	}
+	
 	@Override
 	public void setOrder(Order order) {
 		this.order = order;
+	}
+	
+	@Override
+	public void printOrder() {
+		if (order == Order.ASC) {
+			System.out.println("Order: Ascending");
+		} else {
+			System.out.println("Order: Descending");
+		}
 	}
 	
 	public void setPivot(Pivot piv) {

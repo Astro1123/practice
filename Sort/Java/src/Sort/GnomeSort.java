@@ -17,9 +17,31 @@ public class GnomeSort implements Sort {
 		setOrder(order);
 	}
 	
+	public GnomeSort(boolean order) {
+		setOrder(order);
+	}
+	
+	@Override
+	public void setOrder(boolean order) {
+		if (order) {
+			this.order = Order.ASC;
+		} else {
+			this.order = Order.DESC;
+		}
+	}
+	
 	@Override
 	public void setOrder(Order order) {
 		this.order = order;
+	}
+	
+	@Override
+	public void printOrder() {
+		if (order == Order.ASC) {
+			System.out.println("Order: Ascending");
+		} else {
+			System.out.println("Order: Descending");
+		}
 	}
 	
 	@Override
