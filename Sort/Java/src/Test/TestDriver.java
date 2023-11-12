@@ -12,6 +12,7 @@ public class TestDriver {
 		new HeapSort(), 
 		new MergeSort(), 
 		new QuickSort(),
+		new ShellSort(1),
 		//new GnomeSort(),
 		//new ShakerSort(),
 	};
