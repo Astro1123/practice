@@ -3,6 +3,7 @@ package Test;
 import java.util.Random;
 
 public class Test {
+	
 	public int[] make(final int len) {
 		int[] arr = new int[len];
 		for (int i = 0; i < len; i++) {
@@ -25,6 +26,14 @@ public class Test {
 		int[] arr = new int[len];
 		for (int i = 0; i < len; i++) {
 			arr[i] = rand(min, max);
+		}
+		return arr;
+	}
+	
+	public int[] makeASC(final int len) {
+		int[] arr = new int[len];
+		for (int i = 0; i < len; i++) {
+			arr[i] = i + 1;
 		}
 		return arr;
 	}

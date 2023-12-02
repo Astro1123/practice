@@ -3,7 +3,7 @@ package Test;
 import Sort.*;
 import Sort.Const.*;
 
-public class TestDriver {
+public class SortTestDriver {
 	private final int LENGTH = 16;
 	private final Sort[] LIST = {
 		new BubbleSort(), 
@@ -12,13 +12,14 @@ public class TestDriver {
 		new HeapSort(), 
 		new MergeSort(), 
 		new QuickSort(),
-		new ShellSort(1),
+		//new ShellSort(),
+		//new CombSort(),
 		//new GnomeSort(),
 		//new ShakerSort(),
 	};
 	
 	public static void main(String[] args) {
-		TestDriver td = new TestDriver();
+		SortTestDriver td = new SortTestDriver();
 		td.startDriver();
 	}
 	

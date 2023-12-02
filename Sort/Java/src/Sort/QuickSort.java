@@ -25,11 +25,7 @@ public class QuickSort implements Sort {
 	
 	@Override
 	public void setOrder(boolean order) {
-		if (order) {
-			this.order = Order.ASC;
-		} else {
-			this.order = Order.DESC;
-		}
+		this.order = (order ? Order.ASC : Order.DESC);
 	}
 	
 	@Override
